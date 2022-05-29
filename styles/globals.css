@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
   padding: 0;
@@ -17,5 +13,17 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
+:root {
+  --gray: rgb(20, 20, 20);
+  --orange: #f04021;
+  --brown: rgb(94, 23, 23);
+  --darkBlue: #04274d;
+  --white: #ffffff;
+  --footerContent: #BCB4B4;
+  --footerHeader: #E7EFEF;
+  --fontSize_content: 1.8rem;
+  --fontSize_header: 2.8rem;
+  --navBar:rgb(29, 24, 24);
+}

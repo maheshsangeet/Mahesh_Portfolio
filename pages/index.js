@@ -1,26 +1,17 @@
 import Head from 'next/head'
-// import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-// import photo from "../public/images/pic1.png"
-
+import Hero from '../components/Hero'
 
 
 function Home() {
   return (
-    <div className={styles.container}>
+    // <div className={`${styles.home} w-screen relative z-10 h-screen bg-gray-200`}>
+    <div>
       <Head>
         <title>Mahesh Portfolio</title>
         <meta name="description"content="Mahesh Sangeet's detailed information build by using Next.js"/>
         <link rel="icon" href="/favicon.ico" />
       </Head> 
-
-
-      
-
-
-     
-
-      
+      <div><Hero /></div>
     </div>
   )
 }
