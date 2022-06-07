@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 .navbar {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 9999;
   width: 100%;
   background: linear-gradient(to bottom right, #000000, #070707);
   box-shadow: 10px 0 20px 10px rgb(10, 10, 10);
-
+  border: 1px solid black;
+  height: 8vh;
 }
 .navContent {
   display: none;
@@ -22,6 +23,7 @@
     font-size: 1.1rem;
     cursor: pointer;
     animation: bounce 2s  infinite linear;
+
 }
 
   @keyframes bounce {
@@ -43,10 +45,9 @@
     display: flex;
     justify-content: space-evenly;
     width: 50%; 
-    margin: 1.2rem 0 .9rem 5rem; 
   }
 .navList li {
-    padding: .2rem 1rem;
+    padding: .3rem 1rem 0 1rem;
     list-style-type: none;
     border-radius: 50px;
     font-size: 1rem;
@@ -54,6 +55,7 @@
     display:inline-block; 
     margin:0; 
     color: white;
+    /* font-weight: 600; */
   }
 
   .navList li:after {
