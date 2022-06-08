@@ -4,7 +4,6 @@ import styles from "../styles/Hero.module.css"
 import Image from 'next/image'
 import Layout from './Layout'
 
-
 function Hero() {
     return (
         <div>

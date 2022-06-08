@@ -1,65 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
 .main {
     width: 100%;
-    height: 100vh;
     background-color: black;
     color: white;
     overflow: hidden;
-    /* display: flex; */
-
 }
 .container {
-    display: flex;
-    height: 50%;
-
+    display: flex;   
 }
 .leftSection {
     width: 50%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
-.leftSection svg {
-    position: relative;
-    top: 20%;
-    border: 1px solid brown;
-}
-.leftSection img {
-    /* width: 80vw !important ; */
-    opacity: .8;
-    /* margin-top: -4rem !important; */
-    height: 100vh !important;
-    border: 1px solid white !important;
+.aboutImg  {
+    /* border: 1px solid brown; */
+    margin: 5rem 8rem;
 }
 
+
 .rightSection {
-    position: relative;
-    top: 30%;
-    width: 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .about {
+    position: relative;
+    top: 15%;
     word-spacing: 2px;
     width: 90%;
-    padding: 1rem 0 0 1rem;
+    padding: 1rem 1rem;
     color: rgb(189, 188, 188);
     line-height: 1.5;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 .info {
     font-size: 1.1rem;
 }
-/* .technology {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    border: 1px solid red;
-}
-.technology li {
-    padding: .3rem .5rem;
-    border-radius: 8px;
-    background-color: red;
-    margin: .3rem .5rem;
 
-} */
 .cv button {
     border: none;
     margin-top: 2rem;
@@ -74,37 +49,39 @@
 
 .historyContainer {
     margin: auto;
-    max-width: 1040px;
-    position: relative;
-    top: 20%;
+    max-width: 70rem;
+    /* position: relative;
+    top: 20%; */
 }
 .carousel ul {
-    background: #122c34;
-    padding: 0rem;
+    /* background: #122c34; */
+    padding: 1rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 32px;
-    margin-bottom: 80px;
-
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    border: 1px solid white;
     /* remove scrollbar */
     scrollbar-width: none;
 }
 .carousel ul:first-of-type {
-    margin-left: 0px;
+    margin-left: 0;
 }
 .carousel ul::-webkit-scrollbar {
     display: none;
 }
 .carouselItem {
-    background: #122c34;
+    /* background: #122c34; */
     border-radius: 3px;
-    max-width: 196px;
+    max-width: 12.25rem;
+    /* border: 1px solid white; */
+
 }
 .carouselItemTitle {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    /* line-height: 2rem; */
     letter-spacing: 0.02em;
     display: flex;
     /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
@@ -115,10 +92,10 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 .carouselItemImg {
-    margin-left: 21px;
+    margin-left: 1.3125rem;
     -webkit-mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1),
@@ -127,24 +104,24 @@
     width: 100%;
 }
 .carouselItemText {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.75);
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 .carouselButtons {
-    width: 288px;
+    width: 18rem;
     display: none;
     visibility: hidden;
 }
 .carouselButton {
     box-sizing: border-box;
     background: none;
-    padding: 4px;
+    padding: 0.25rem;
     border: none;
     cursor: pointer;
-    margin-right: 4px;
+    margin-right: 0.25rem;
     /* opacity: ${(props) => (props.active === props.index ? `1` : `.33`)};
     transform: ${(props) =>
         props.active === props.index ? `scale(1.6)` : `scale(1)`}; */ 
@@ -154,10 +131,10 @@
 }
 .carouselButtonDot {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     margin: auto;
-    width: 3px;
-    height: 3px;
+    width: 0.1875rem;
+    height: 0.1875rem;
 }
 
 
@@ -165,10 +142,54 @@
 
 
 
-.sectionDivider {
+/* .sectionDivider {
     width: 64px;
     height: 6px;
     border-radius: 10px;
     background-color: #fff;
     background: linear-gradient(270deg, #F4743B 0%, #25283D 100%);
+} */
+
+/*********************** about info items **************************/
+
+.aboutInfoItem {
+    width: 85%;
+    margin: 10rem auto;
+    padding: 0 1rem;
+    /* border: 1px solid red; */
 }
+.item {
+    display: flex;
+}
+.item h2 {
+    width: 25%;
+    font-weight: 300;
+    font-size: 1.3rem;
+    /* border: 1px solid red; */
+}
+.items {
+    display: flex;
+}
+.items>p {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.webTechnologies {
+    /* border: 1px solid red; */
+    margin: 1rem 1.5rem;
+    text-align: center;
+}
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 1s;
+}
+.icon:hover {
+    transform: scale(1.5);
+    transform: rotate(360deg);
+    color: rgb(246, 79, 8);
+}
+.experienceContainer {
+    margin: 5rem 0;
+}
+

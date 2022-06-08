@@ -6,6 +6,6 @@ export const TimeLineData = [
     },
     { year: 2020, text: "Production of music videos for artists" },
     { year: 2021, text: "Started learning web development" },
-    { year: 2022, text: "Looking for professional experience" },
+    { year: 2022, text: "Currently working as Front end developer in Samarth meditech pvt.ltd,Hubli" },
   ];
   
