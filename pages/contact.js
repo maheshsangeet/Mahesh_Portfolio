@@ -3,10 +3,7 @@ import Layout from '../components/Layout'
 import styles from "../styles/contact.module.css"
 import { useState } from 'react'
 import BackgroundAnimation from '../components/BackgroundAnimation'
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaGoogle } from 'react-icons/fa';
-import Link from 'next/link'
+import SocialMedia from '../components/SocialMedia'
 
 const Contact = () => {
 
@@ -79,33 +76,10 @@ const Contact = () => {
               <BackgroundAnimation />
             </div>
           </section>
+          <section>
+            <SocialMedia />
+          </section>         
         </main>
-
-        <div className={styles.socialMedia}>
-          <div className={styles.socialMediaContainer}>
-            <div className={`${styles.media} ${styles.ribbon}`}>
-
-              <Link href="https://github.com/maheshsangeet/">
-                <a target="_blank" rel="noopener noreferrer" style={{background: "#333333"}}>
-                  <FaGithub className={styles.icon} />
-                </a>
-              </Link>
-              <Link href="https://github.com/maheshsangeet/">
-                <a target="_blank" rel="noopener noreferrer" style={{background:  "#0D76A8"}}>
-                  <FaLinkedinIn className={styles.icon}  />
-                </a>
-              </Link>
-              <Link href="https://github.com/maheshsangeet/">
-                <a target="_blank" rel="noopener noreferrer" style={{background: "#EA4335"}}>
-                  <FaGoogle className={styles.icon}  />
-                </a>
-              </Link>
-
-            </div>
-            {/* <div className={styles.media}>
-            </div> */}
-          </div>
-        </div>
       </Layout>
     </div>
   )

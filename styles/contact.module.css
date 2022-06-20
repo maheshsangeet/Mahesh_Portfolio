@@ -84,23 +84,8 @@
     /* border: 1px solid red; */
     position: relative;
     top: 10%;
-    margin-left: 10%;
-}
-.media a {
-    border-radius: 50%;
-    color: #fff;
-    display: inline-block;
-    height: 2.5rem;
-    line-height: 3rem;
-    margin: auto 3px;
-    width: 2.5rem;
-    font-size: 18px;
-    text-align: center;
-    
-}
-.icon {
-    width: 1.4rem;
-    height: 1.4rem;
-    
+    margin-left: 5%;
+    width: 80%;
 }
 
+    
