@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return ( 
-    <div style={{background:"#070707",color:"#b2b1b1"}}>
+    <div style={{background:"#090909",color:"#BCB4B4"}}>
       <Navbar/>
       {children}
     </div>
