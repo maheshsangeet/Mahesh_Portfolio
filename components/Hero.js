@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import photo from "../public/images/pic1.png"
+import photo from "../public/images/pic1 (1).png"
 import styles from "../styles/Hero.module.css"
 import Image from 'next/image'
 import Layout from './Layout'
@@ -47,7 +47,9 @@ function Hero() {
                     </section>
 
                     <section className={styles.rightSection}>
-                        {/* <Image src={photo}></Image> */}
+                        <div className={styles.img}>
+                            <Image src={photo} alt="Picture of hero"></Image>
+                        </div>
                     </section>
                 
                 </main>

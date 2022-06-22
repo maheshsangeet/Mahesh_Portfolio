@@ -13,8 +13,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(132deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 35%, rgba(14,14,14,1) 50%, rgba(85,88,91,1) 50%, rgba(227,220,62,1) 50%, rgba(255,249,0,1) 100%);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(132deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 35%, rgba(14,14,14,1) 50%, rgba(85,88,91,1) 50%, rgba(227,220,62,1) 50%, rgba(255,249,0,1) 100%); */
 }
 
 .div1 {
@@ -43,4 +43,13 @@
 .icon {
     width: 1.4rem;
     height: 1.4rem;
+}
+.iconContainer {
+    transition: 1s;
+}
+.iconContainer:hover {
+    box-shadow: 1px 1px 1px white;
+}
+.iconContainer:active {
+    transform: scale(.5);
 }

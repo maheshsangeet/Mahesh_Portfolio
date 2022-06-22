@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/about.module.css'
 import Layout from '../components/Layout'
-import { FaReact } from 'react-icons/fa';
+import { FaLinux, FaReact } from 'react-icons/fa';
 import { FaHtml5 } from 'react-icons/fa';
 import { FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
@@ -125,7 +125,7 @@ const About = () => {
                     <div className={styles.items}>
                       <div className={styles.webTechnologies}>
                         <SiPwa className={styles.icon} />
-                        <p>Github</p>
+                        <p>PWA</p>
                       </div>
                       <div className={styles.webTechnologies}>
                         <FaHtml5 className={styles.icon} />
@@ -137,7 +137,11 @@ const About = () => {
                       </div>
                       <div className={styles.webTechnologies}>
                         <FaGithub className={styles.icon} />
-                        <p>Github</p>
+                        <p>Github</p>FaLinux
+                      </div>
+                      <div className={styles.webTechnologies}>
+                        <FaLinux className={styles.icon} />
+                        <p>Linux</p>
                       </div>
                     </div>
                   </div>

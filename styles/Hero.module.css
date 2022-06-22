@@ -1,71 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
 .main {
   width: 100%;
   height: 92vh;
-  background-color: black;
-  color: #fff;
   display: flex;
-  /* position: relative; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .leftSection {
   width: 60%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
     
 }
 .introduction {
   font-family:'Sacramento', cursive;
   position: relative;
-  top: 20%;
-  left: 15%;
+  top: 22%;
+  left: 20%;
   width: 80%;
   /* border: 1px solid blue; */
 
 }
 .introduction h2 {
-    display: inline-block;
-    color: rgb(209, 206, 206);
+  display: inline-block;
 }
 .line {
-    display: block;  
+  display: block;  
 }
 .line:last-child {
-    margin: 0.5rem 0 0 2rem;
+  margin: 0.5rem 0 0 2rem;
 }
 .nameSection{
-    margin: 1rem 0 0 5rem;
-    /* width: 90%; */
-    /* border: 1px solid blue; */
+  margin: 1rem 0 0 5rem;
+  /* border: 1px solid blue; */
 }
 .name h1 {
-    font-size: 5.5rem;
-    letter-spacing: 5px;
-    font-family: 'Arvo', serif;
-    font-weight: bolder;
-    /* border: 1px solid red; */
+  font-size: 6rem;
+  letter-spacing: 5px;
+  font-family: myFont;
+  font-weight: bolder;
+  /* border: 1px solid red; */
 }
 .words {
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0 !important;
 }
   
 .words span {
-    display: inline-block;
-    animation: move 3s ease-in-out ;
+  display: inline-block;
+  animation: move 3s ease-in-out ;
 }
 @keyframes move {
-    0% {
-      transform: translate(-30%, 0);
-    }
-    50% {
-      /* text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75); */
-      text-shadow: 0 25px 50px rgb(77, 76, 76);
-    }
-    100% {
-      transform: translate(30%, 0);
-    }
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgb(77, 76, 76);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
 }
   
 .words span:nth-child(2) {
@@ -92,36 +85,36 @@
   animation-delay: 3s;
 }
 .name h3 {
-    display: inline-block;
-    margin: -5rem 0 0 4.5rem;
-    letter-spacing: 3px;
-    font-weight: lighter;
-    /* color: rgb(229,229,229); */
-    color: orange;
+  display: inline-block;
+  margin: -5rem 0 0 5rem;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: var(--orange);
 }
 .about {
-    display: none;
-    word-spacing: 7px;
-    /* width: 61%; */
-    padding: 1rem 0 0 1rem;
-    font-size: 1.1rem;
-    color: rgb(189, 188, 188);
-    line-height: 1.5;
+  display: none;
+  word-spacing: 7px;
+  padding: 1rem 0 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 .nameSection:hover .name {
-    display: none;
+  display: none;
 }
 .nameSection:hover .about {
-    display: block;
+  display: block;
 }
 .rightSection {
-    width: 40%;
-    /* border: 1px solid blue; */
+  width: 40%;
+  /* border: 1px solid blue; */
+}
+.rightSection {
+  padding-top: 4.9rem;
+  padding-left: 7rem;
 }
 .rightSection img {
-    /* width: 80vw !important ; */
-    opacity: .8;
-    /* margin-top: -4rem !important; */
-    height: 100vh !important;
-    /* border: 1px solid white !important; */
+  /* border: 1px solid red !important; */
+  height: 81vh !important;
+  opacity: .8;
+  filter: drop-shadow(15px 16px 20px rgb(55, 54, 54));
 }

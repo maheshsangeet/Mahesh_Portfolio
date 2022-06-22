@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
@@ -16,14 +16,22 @@ a {
   scroll-behavior: smooth;
 }
 :root {
+  --theme: #070707;
+  --fontColor: #C8D2DD;
   --gray: rgb(20, 20, 20);
-  --orange: #f04021;
+  --orange: #FA7539;
   --brown: rgb(94, 23, 23);
   --darkBlue: #04274d;
   --white: #ffffff;
-  --footerContent: #BCB4B4;
   --footerHeader: #E7EFEF;
   --fontSize_content: 1.8rem;
   --fontSize_header: 2.8rem;
   --navBar:rgb(29, 24, 24);
+  --orangee:#d55708;
+  --creame:#FDF4C0;
+  --res:#CB9867;
+}
+@font-face {
+  font-family: myFont;
+  src: url('../fonts/Arvo-Italic.ttf');
 }
