@@ -53,8 +53,7 @@
     letter-spacing: 2px; 
     display:inline-block; 
     margin:0; 
-    color: white;
-    /* font-weight: 600; */
+    /* color: white; */
   }
 
   .navList li:after {

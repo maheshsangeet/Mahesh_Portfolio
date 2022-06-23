@@ -45,9 +45,23 @@ const About = () => {
                       <div className={styles.info}>
                         <p>Hey !</p>
                         <p>I am Mahesh Sangeet, 
-                          <br /> Originally hailing from the Hubli,Karnataka.  for the last few years I’ve been honing my skills in front end development building products. I'm a front-end developer located in Hubli,Karnataka. I love to create simple yet beautiful websites with great user experience.</p>
+                          <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> for the last few years I’ve been honing my skills in front end development building products. I'm a front-end developer located in Hubli,Karnataka. I love to create simple yet beautiful websites with great user experience.</p>
                         <p>I started coding since I was in high school. Coding is also an art for me. I love it and now I have the opportunity to design along with the coding. I find it really interesting and I enjoyed the process a lot.</p>
                         <p>I Have done projects using following WebTechnologies.</p>
+                      </div>
+
+                      <div className={styles.technologies}>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>React JS</li>
+                          <li>Next JS</li>
+                          <li>Gatsby</li>
+                          <li>Bootstrap</li>
+                          <li>PWA</li>
+                          <li>React Bootstrap</li>
+                        </ul>
                       </div>
                         
                       <div className={styles.cv}>
@@ -65,7 +79,7 @@ const About = () => {
             <div className={styles.aboutInfoItem}>
               {/****************** skills section ******************/}
               <section className={styles.skillsContainer}>
-                <h1 className={`${styles.sectionDivider} `}>MY SKILLS</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>MY SKILLS</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
@@ -105,18 +119,18 @@ const About = () => {
                         <FaBootstrap className={styles.icon} />
                         <p>Bootstrap</p>
                       </div>
-                      <div className={styles.webTechnologies}>
+                      {/* <div className={styles.webTechnologies}>
                         <SiJavascript className={styles.icon} />
                         <p>React Bootstrap</p>
-                      </div>
+                      </div> */}
                       <div className={styles.webTechnologies}>
                         <SiTailwindcss className={styles.icon} />
                         <p>Tailwind CSS</p>
                       </div>
-                      <div className={styles.webTechnologies}>
+                      {/* <div className={styles.webTechnologies}>
                         <SiJavascript className={styles.icon} />
                         <p>Ant D</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
@@ -127,17 +141,17 @@ const About = () => {
                         <SiPwa className={styles.icon} />
                         <p>PWA</p>
                       </div>
-                      <div className={styles.webTechnologies}>
+                      {/* <div className={styles.webTechnologies}>
                         <FaHtml5 className={styles.icon} />
                         <p>VS code</p>
-                      </div>
+                      </div> */}
                       <div className={styles.webTechnologies}>
                         <SiMysql className={styles.icon} />
                         <p>Mysql</p>
                       </div>
                       <div className={styles.webTechnologies}>
                         <FaGithub className={styles.icon} />
-                        <p>Github</p>FaLinux
+                        <p>Github</p>
                       </div>
                       <div className={styles.webTechnologies}>
                         <FaLinux className={styles.icon} />
@@ -151,7 +165,7 @@ const About = () => {
 
               {/****************** experience section ******************/}
               <section className={styles.experienceContainer}>
-                <h1 className={`${styles.header} ${styles.halfBorder}`}>EXPERIENCES</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>EXPERIENCES</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
@@ -179,13 +193,13 @@ const About = () => {
 
               {/****************** education section ******************/}
               <section className={styles.educationContainer}>
-                <h1 className={`${styles.header} ${styles.halfBorder}`}>EDUCATION</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>EDUCATION</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
                     <h2>School</h2>
                     <div className={styles.items}>
-                      <p>Lamington High School,Hubbali</p>
+                      <p>Lamington Boys High School,Hubbali</p>
                     </div>
                   </div>
 
