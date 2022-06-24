@@ -10,7 +10,7 @@
     
 }
 .introduction {
-  font-family:'Sacramento', cursive;
+  font-family: var(--fontCursive);
   position: relative;
   top: 22%;
   left: 20%;

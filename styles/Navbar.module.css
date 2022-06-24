@@ -44,6 +44,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 50%; 
+
   }
 .navList li {
     padding: .3rem 1rem 0 1rem;
@@ -53,7 +54,6 @@
     letter-spacing: 2px; 
     display:inline-block; 
     margin:0; 
-    /* color: white; */
   }
 
   .navList li:after {
@@ -71,7 +71,8 @@
   }
   .navbar li a {
     color: var(--fontColor);
-    font-family:'Sacramento', cursive;
+    font-family: var(--fontCursive);
+    color: var(--white);
   }
 
 
