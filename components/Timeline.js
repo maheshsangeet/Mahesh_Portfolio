@@ -114,6 +114,7 @@ const Timeline = () => {
                   active={activeItem}
                   onClick={(e) => handleClick(e, index)}
                   type="button"
+                  style={{background:"red"}}
                 >
                   <div className={styles.carouselButtonDot} active={activeItem} />
                 </button>

@@ -12,8 +12,6 @@ import { SiTailwindcss } from 'react-icons/si';
 import { SiGatsby } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
 import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaMedium } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiPwa } from 'react-icons/si';
 import Timeline from '../components/Timeline';
@@ -47,7 +45,7 @@ const About = () => {
                         <p>I am Mahesh Sangeet, 
                           <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> for the last few years I’ve been honing my skills in front end development building products. I'm a front-end developer located in Hubli,Karnataka. I love to create simple yet beautiful websites with great user experience.</p>
                         <p>I started coding since I was in high school. Coding is also an art for me. I love it and now I have the opportunity to design along with the coding. I find it really interesting and I enjoyed the process a lot.</p>
-                        <p>I Have done projects using following WebTechnologies.</p>
+                        <p>I Have done projects using following Web Technologies.</p>
                       </div>
 
                       <div className={styles.technologies}>
@@ -59,6 +57,7 @@ const About = () => {
                           <li>Next JS</li>
                           <li>Gatsby</li>
                           <li>Bootstrap</li>
+                          <li>And D</li>
                           <li>PWA</li>
                           <li>React Bootstrap</li>
                         </ul>
@@ -185,7 +184,7 @@ const About = () => {
                   <div className={styles.item}>
                     <h2>2018-2019</h2>
                     <div className={styles.items}>
-                      <p>Intern/Junior Web Developer at Sathvik Softech</p>
+                      <p>Engineer Trainee at Trillium flow technology Pvt Ltd</p>
                     </div>
                   </div>
                 </div>
