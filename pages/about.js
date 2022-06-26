@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/about.module.css'
 import Layout from '../components/Layout'
 import { FaLinux, FaReact } from 'react-icons/fa';
@@ -20,6 +19,21 @@ import Timeline from '../components/Timeline';
 
 
 const About = () => {
+
+//   const [gear1, setGear1] = useState("")
+//   const [gear2, setGear2] = useState("")
+
+//   const rotate = () => {
+//     setGear1(rotate( + (window.scrollY * 2.5) + deg))
+//     setGear2(rotate(- + (window.scrollY * 2.5) + deg))
+//   }
+  
+
+// useEffect(() => {
+//   window.addEventListener('scroll', rotate);
+
+// }, []);
+  
 
   return (
       <div>
@@ -43,8 +57,8 @@ const About = () => {
                       <div className={styles.info}>
                         <p>Hey !</p>
                         <p>I am Mahesh Sangeet, 
-                          <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> for the last few years I’ve been honing my skills in front end development building products. I'm a front-end developer located in Hubli,Karnataka. I love to create simple yet beautiful websites with great user experience.</p>
-                        <p>I started coding since I was in high school. Coding is also an art for me. I love it and now I have the opportunity to design along with the coding. I find it really interesting and I enjoyed the process a lot.</p>
+                          <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> Basically I'm a Mechanical Engineer graduated from Hulkoti, Gadag.  For the last few years I’ve been honing my skills in <strong> front end development</strong> building products. I love to create simple yet beautiful websites with great user experience. Life long learner.</p>
+                        {/* <p>I started my coding journey by joining the organization Sathvik Softech, Hubbali. where I had completed my course and got an opportunity for an internship and worked many small projects learned new technology with real time projects. include designing and developing UI for the websites and integrating it with the back-end system.</p> */}
                         <p>I Have done projects using following Web Technologies.</p>
                       </div>
 
@@ -64,7 +78,9 @@ const About = () => {
                       </div>
                         
                       <div className={styles.cv}>
-                        <button >Download CV</button>
+                        <a href='/static/maheshcv2022.pdf' target="_blank" rel="noopener noreferrer">
+                          <button> Download CV</button> 
+                        </a>
                       </div>
                   </div>
               </section>
@@ -219,6 +235,12 @@ const About = () => {
               </section>
               
             </div>
+
+
+            {/* <div className={`${styles.containerGear} ${styles.gears}`}>
+              <div className={`${styles.gear} ${styles.gear1}`}></div>
+              <div className={`${styles.gear} ${styles.gear2}`}></div>
+            </div> */}
             
           </main>
         </Layout>
@@ -227,3 +249,5 @@ const About = () => {
     )
   }
   export default About;
+  {/* <div className={`${styles.gear} ${styles.gear1}`} style={{transform:{gear1}}}></div>
+              <div className={`${styles.gear} ${styles.gear2}`} style={{transform:{gear2}}}></div> */}

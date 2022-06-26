@@ -27,6 +27,9 @@
 .content p a{
     color: var(--orange);
 }
+.content p a:hover {
+    text-decoration: underline;
+}
 .inputContainer {
     margin-bottom: 1.8rem;
 

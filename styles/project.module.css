@@ -77,3 +77,8 @@
     font-size: 14px;
 
 }
+
+.github svg {
+    transform: rotate(90deg);
+    cursor: pointer;
+}

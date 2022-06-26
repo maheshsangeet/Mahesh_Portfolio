@@ -50,7 +50,7 @@ const Contact = () => {
             <div className={styles.leftSectionContainer}>
               <div className={styles.content}>
                 <h1>Let's talk.</h1>
-                <p>Get in touch via the form below, or by emailing <a href=''>maheshsangeet0@gmail.com.</a></p>
+                <p>Get in touch via the form below, or by emailing <a href='mailto:maheshsangeet0@gmail.com'>maheshsangeet0@gmail.com.</a></p>
               </div>
 
               <form onSubmit={sendEmail}>
@@ -76,7 +76,6 @@ const Contact = () => {
                   <label className="text-base font-bold mb-2   text-gray-400 mt-8">Your Message:</label>
                     <textarea
                     rows="5"
-                    // cols="50"
                     required
                     name='message'
                     placeholder='Enter your message'

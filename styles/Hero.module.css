@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 .leftSection {
-  width: 60%;
+  width: 65%;
   /* border: 1px solid red; */
     
 }
@@ -97,6 +97,16 @@
   padding: 1rem 0 0 1rem;
   font-size: 1.1rem;
   line-height: 1.5;
+  /* border: 1px solid red; */
+  padding: 0 0 2rem 1.5rem;
+}
+.about p {
+  transition: 100ms;
+  display: inline-block;
+}
+.about p:last-child:hover {
+  font-size: 1.2rem;
+  
 }
 .nameSection:hover .name {
   display: none;
@@ -105,12 +115,12 @@
   display: block;
 }
 .rightSection {
-  width: 40%;
+  width: 35%;
   /* border: 1px solid blue; */
 }
 .rightSection {
   padding-top: 4.9rem;
-  padding-left: 7rem;
+  padding-left: 2rem;
 }
 .rightSection img {
   /* border: 1px solid red !important; */

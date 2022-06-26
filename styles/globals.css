@@ -28,3 +28,14 @@ a {
   src: url('../fonts/Arvo-Italic.ttf');
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: #202020;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #f5900c;
+  background-image: linear-gradient(to right, #3b3b3a, #3a3a38, #383837, #373735, #353634);
+  border-radius: 10px;
+}

@@ -3,8 +3,11 @@ import photo from "/public/static/pic1 (1).png"
 import styles from "../styles/Hero.module.css"
 import Image from 'next/image'
 import Layout from './Layout'
+import Link from 'next/link'
 
 function Hero() {
+    
+
     return (
         <div>
             <Head>
@@ -37,10 +40,15 @@ function Hero() {
                                     </h3>
                                 </div>
                                 <div className={styles.about}>
-                                    <p>Mahesh Sangeet, a Front end developer who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact. Life long learner, Started as a Trainee at Sri Guru Enterprises, Hubli. After that joined to Trillium Flow Technology, Hubli. Carried out project on “Productivity Improvement of 
-                                    a manual assembly line”. I was responsible for Co-ordinate with production department to review the routing and cycle time planned Vs actual and finalizing process flow and setting routing of 
-                                    individual parts as well as assembly parts. Currently, I am a Web developer intern at Sathvik Softech, Hubli. My responsibility include designing and developing UI for the websites and integrating it with back-end system.
+                                    <p>
+                                        Mahesh Sangeet, a passionate Front end developer who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact. 
+                                       <br /> 
+                                       <br /> 
+                                       Currently working at Samarth Meditech Pvt Ltd Hubli,Karnataka. I’m currently focusing on React.js and Next js. Life long learner.
                                     </p>
+                                    <Link href="/about" >
+                                           <p style={{color:"#f77b42",cursor:"pointer"}}>More details &#10153;</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
