@@ -57,7 +57,7 @@ const About = () => {
                       <div className={styles.info}>
                         <p>Hey !</p>
                         <p>I am Mahesh Sangeet, 
-                          <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> Basically I'm a Mechanical Engineer graduated from Hulkoti, Gadag.  For the last few years I’ve been honing my skills in <strong> front end development</strong> building products. I love to create simple yet beautiful websites with great user experience. Life long learner.</p>
+                          <br /> Originally hailing from the <strong>Hubli,Karnataka.</strong> Basically I'm a Mechanical Engineer graduated from Hulkoti, Gadag.  For the last few years I’ve been honing my skills in <strong> front end development</strong> building products/application using wide range of front end technolgies. I love to create simple yet beautiful websites with great user experience. Life long learner.</p>
                         {/* <p>I started my coding journey by joining the organization Sathvik Softech, Hubbali. where I had completed my course and got an opportunity for an internship and worked many small projects learned new technology with real time projects. include designing and developing UI for the websites and integrating it with the back-end system.</p> */}
                         <p>I Have done projects using following Web Technologies.</p>
                       </div>
@@ -94,7 +94,7 @@ const About = () => {
             <div className={styles.aboutInfoItem}>
               {/****************** skills section ******************/}
               <section className={styles.skillsContainer}>
-                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>MY SKILLS</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>My Skills</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
@@ -180,7 +180,7 @@ const About = () => {
 
               {/****************** experience section ******************/}
               <section className={styles.experienceContainer}>
-                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>EXPERIENCES</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>Experience</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
@@ -208,7 +208,7 @@ const About = () => {
 
               {/****************** education section ******************/}
               <section className={styles.educationContainer}>
-                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>EDUCATION</h1>
+                <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`}>Education</h1>
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>

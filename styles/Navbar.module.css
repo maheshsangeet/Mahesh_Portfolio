@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+.navContent input[type="checkbox"],
+.navContent .bars,
+.navContent .brand{
+  display: none;
+}
+
 .navbar {
   position: sticky;
   left: 0;
@@ -10,128 +15,168 @@
   height: 8vh;
   background-color: rgb(10, 10, 10);
 }
-.navContent {
-  display: none;
-}
+
 .brandName{
-    position: absolute;
-    right: 0;
-    margin: 1.5rem 4rem .5rem 0; 
-    font-family: 'Cedarville Cursive', cursive;
-    color: var(--orange);
-    font-size: 1.1rem;
-    cursor: pointer;
-    animation: bounce 2s  infinite linear;
+  position: absolute;
+  right: 0;
+  margin: 1.5rem 4rem .5rem 0; 
+  font-family: var(--fontCursive);
+  color: var(--orange);
+  font-size: 1.1rem;
+  cursor: pointer;
+  animation: bounce 2s  infinite linear;
 
 }
 
   @keyframes bounce {
-      0%   { transform: translateY(0); }
-      50%  { transform: translateY(-20px); }
-      100% { transform: translateY(0); }
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
   } 
 .brandName a::before {
-    content: "<";
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+  content: "<";
+  /* font-family: -apple-system, Blin kMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 .brandName a::after {
-    content: "/>";
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  content: "/>";
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 
 }
 .navList {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%; 
-
-  }
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%; 
+}
 .navList li {
-    padding: .3rem 1rem 0 1rem;
-    list-style-type: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    letter-spacing: 2px; 
-    display:inline-block; 
-    margin:0; 
-  }
+  padding: .3rem 1rem 0 1rem;
+  list-style-type: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  letter-spacing: 2px; 
+  display:inline-block; 
+  margin:0; 
+}
 
-  .navList li:after {
-    content: '';
+.navList li:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  /* margin: auto;                       try without this, starts from left to right */
+  background: var(--orange);
+  transition: width .3s;
+}
+.navbar li:hover::after {  
+  width: 100%;
+}
+.navbar li a {
+  color: var(--fontColor);
+  font-family: var(--fontCursive);
+  color: var(--white);
+}
+
+
+
+@media screen and (max-width:600px) {
+  .navContent input[type="checkbox"],
+  .navContent .bars,
+  .navContent .brand{
     display: block;
-    width: 0;
-    height: 2px;
-    margin: auto;                     /*   try without this, starts from left to right */
-    background: var(--orange);
-    transition: width .3s;
-  }
-
-  .navbar li:hover::after {  
-    width: 100%;
   }
   .navbar li a {
+    font-family: myFont !important;
+  }
+  .navContent .brandName {
+    display: none;
+  }
+  .navContent {
+    display: block;
+    position: relative;
+    height: 7vh;
+    display: flex;
+    /* border: 1px solid white; */
+  }
+  .navContent input[type="checkbox"]{
+    position: absolute;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    top: .3rem;
+    left: .7rem;
+    z-index: 50;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* .brand {
+    font-size: 1.1rem;
     color: var(--fontColor);
     font-family: var(--fontCursive);
-    color: var(--white);
+    margin: auto;
+    font-weight: bolder;
+    padding-left: 70%;
+  } */
+  .navContent .bars {
+    display: block;
+    height: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto .8rem;
+  }
+  .navContent .bars .bar {
+    display: block;
+    border-radius: 10px;
+    height: 0.25rem;
+    width: 2rem;
+    background-color: var(--white);
+  }
+  .bars .first{
+    transform-origin: 0% 0%;
+      transition: transform 0.3s ease-in-out;
+  }
+  .bars .second{
+    transition: transform 0.2s ease-in-out;
+  }
+  .bars .third{
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bars:hover {
+    background-color: black;
+  }
+  .navList {
+    /* border: 1px solid yellow; */
+    background-color: rgb(0, 0, 0);
+    height: 50vh;
+    width: 70%;
+    transform: translate(-180%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 2.8rem -4rem;    
+  }
+  .navList li {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .navbar li:hover::after {  
+    width: 0;
+  }
+  .navContent input[type="checkbox"]:checked ~ .navList{
+    transform: translateX(0);
+  }
+  .navContent input[type="checkbox"]:checked ~ .bars .first{
+      transform: rotate(45deg);
+  }
+  .navContent input[type="checkbox"]:checked ~ .bars .second{
+      transform: scaleY(0);
+  }
+  .navContent input[type="checkbox"]:checked ~ .bars .third{
+      transform: rotate(-45deg);
   }
 
-
-
-  @media screen and (max-width:600px) {
-     .n.navList, .brandName{
-      display: none;
-    }
-    .navContent {
-      display: block;
-      position: fixed;
-      left: 0px;
-      top: 0;
-      z-index: 9999;
-      width: 100%;
-      height: 6vh;
-      background: linear-gradient(to bottom right, #000000, #070707);
-      box-shadow: 10px 0 20px 10px rgb(10, 10, 10);
-      display: flex;
-      justify-content: space-between;
-    }
-    .navbar .navContent .brand {
-      padding: .8rem 0 0 2rem;
-      font-size: 1.1  rem;
-      color: white;
-      font-family: 'Cedarville Cursive', cursive;
-      font-weight: bolder;
-    }
-    .bars {
-      padding:  0 0 0 5px; 
-      margin: 5px 3rem 0 0 ;
-      cursor: pointer;
-      position: relative;
-      transition: all 0.3s ease;
-      width: 45px;
-      height: 35px;
-      border-radius: 3px;
-    }
-    .bars div{
-      height: 4px;
-      background-color:rgb(248, 83, 54);
-      position: absolute;
-      transition: all 0.5s ease;
-    }
-    .bars .first{
-      top: 6px;
-      width: 25px;
-    }
-    .bars .second{
-      top: 15px;
-      width: 35px;
-    }
-    .bars .third{
-      top: 24px;
-      width: 35px;
-    }
-    .bars:hover {
-      background-color: black;
-      
-    }
-
-  }
+}

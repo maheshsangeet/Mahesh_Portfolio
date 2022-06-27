@@ -47,7 +47,7 @@
     border-radius: 1rem;
 }
 .projectCard:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .projectCard img {
     border-radius: 1rem;
@@ -80,5 +80,4 @@
 
 .github svg {
     transform: rotate(90deg);
-    cursor: pointer;
 }

@@ -44,7 +44,7 @@ function Hero() {
                                         Mahesh Sangeet, a passionate Front end developer who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact. 
                                        <br /> 
                                        <br /> 
-                                       Currently working at Samarth Meditech Pvt Ltd Hubli,Karnataka. I’m currently focusing on React.js and Next js. Life long learner.
+                                       Currently I am working as a front end developer at Samarth Meditech Pvt Ltd Hubli,Karnataka. I’m currently focusing on React.js and Next js and Life long learner,always hunger for learning new things and put those into continuous implementation.
                                     </p>
                                     <Link href="/about" >
                                            <p style={{color:"#f77b42",cursor:"pointer"}}>More details &#10153;</p>

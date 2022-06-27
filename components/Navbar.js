@@ -1,4 +1,3 @@
-// import {Link} from 'react-scroll'
 import styles from "../styles/Navbar.module.css"
 import Link from 'next/link'
 
@@ -6,21 +5,24 @@ const Navbar = () => {
     return (
             <nav className={styles.navbar}>
                 <div className={styles.navContent}>
-                    <p  className={styles.brand}>Mahesh Sangeet</p>
+                    <input type="checkbox" name="" id=""/>
                     <div className={styles.bars}>
-                        <div className={styles.first}></div>
-                        <div className={styles.second}></div>
-                        <div className={styles.third}></div>
+                        <div className={`${styles.bar} ${styles.first}`}></div>
+                        <div className={`${styles.bar} ${styles.second}`}></div>
+                        <div className={`${styles.bar} ${styles.third}`}></div>
                     </div>
-                </div>
-                <div className={styles.brandName}><Link href='/' ><a>Mahi</a></Link></div>
-                <ul className={styles.navList} >
-                    <li className="home"><Link href='/' ><a>Home</a></Link></li>
-                    <li className="about"><Link href='/about' ><a>About</a></Link></li>
-                    <li className="project"><Link href='/project' ><a>Project</a></Link></li>
-                    <li className="contact"><Link href='/contact' ><a>Contact</a></Link></li>
 
-                </ul>
+                    {/* <p  className={styles.brand}>Mahesh Sangeet</p> */}
+                    <div className={styles.brandName}><Link href='/' ><a>Mahi</a></Link></div>
+
+                    <ul className={styles.navList} >
+                        <li className="home"><Link href='/' ><a>Home</a></Link></li>
+                        <li className="about"><Link href='/about' ><a>About</a></Link></li>
+                        <li className="project"><Link href='/project' ><a>Project</a></Link></li>
+                        <li className="contact"><Link href='/contact' ><a>Contact</a></Link></li>
+                    </ul>
+                </div>
+
             </nav>
 
 
