@@ -88,7 +88,6 @@ const Contact = () => {
                   <button className={styles.submitBtn}>Submit</button>
                 </div>
               </form>
-
             </div>
           </section>
 
