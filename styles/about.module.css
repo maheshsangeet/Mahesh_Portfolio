@@ -14,6 +14,7 @@
 .aboutImg  {
     /* border: 1px solid brown; */
     margin: 0 8rem;
+    width: 32rem;
 }
 .aboutImg svg {
     filter: drop-shadow(0 0 0.4rem rgb(90, 89, 89));
@@ -26,6 +27,7 @@
     padding: 1rem 1rem;
     line-height: 1.5;
     /* border: 1px solid yellow; */
+    
 }
 .info {
     font-size: 1.1rem;
@@ -49,7 +51,7 @@
 .cv button {
     border: none;
     margin-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: var(--fontSize_p);
     border-radius: 8px;
     padding: .5rem 1rem;
     transition: 800ms;
@@ -66,13 +68,6 @@
 }
 
 
-.sectionDivider {
-    display: inline;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(0.25turn, white, white, rgba(56,2,155,0));
-    border-image-slice: 1;
-}
-
 /***************************** about info items ******************************/
 .aboutInfoItem {
     width: 85%;
@@ -83,10 +78,17 @@
 .aboutInfoItem h1{
     color: var(--orange);
 }
+.sectionDivider {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(0.25turn, white, white, rgba(56,2,155,0));
+    border-image-slice: 1;
+}
 .header {
     font-size: 1.6rem;
     border-bottom: 1px solid rgb(198, 196, 196);
     display: inline-block;
+    letter-spacing: 1px;
   
 }
   .header::after {
@@ -123,21 +125,22 @@
 .item h2 {
     width: 25%;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     /* border: 1px solid red; */
 }
 .items {
     display: flex;
+    /* border: 1px solid red; */
+
 }
 .items>p {
     letter-spacing: 1px;
-    font-size: 1.1rem;
-    margin-left: 1.5rem;
-
+    font-size: var(--fontSize_p);
+    /* border: 1px solid red; */
 }
 .webTechnologies {
     /* border: 1px solid red; */
-    margin: 1rem 1.5rem;
+    margin: 1rem 4rem 1rem 0;
     text-align: center;
 }
 .icon {
@@ -176,3 +179,78 @@
     height: 5rem;
     margin: 0 0 2rem -.45rem;
 }
+
+
+
+/************************ responsive part *************************/
+@media screen and (max-width:600px) {
+
+    .container {
+        display: flex; 
+        margin: 2rem 0 6rem 0;  
+        flex-flow: column;  
+    }
+    .leftSection {
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    .aboutImg  {
+        margin: 0 auto;
+        width: 25rem;
+    }
+    .aboutImg svg {
+        filter: drop-shadow(0 0 0.6rem rgb(122, 122, 122));
+    }
+    .about {
+        text-align: justify;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        /* border: 1px solid yellow; */
+    }
+    .info {
+        font-size: var(--fontSize_p);
+    }
+    .technologies ul {
+        margin: 2rem 0 0 -3rem;
+    }
+    .technologies>ul>li {
+        font-size: var(--fontSize_p);
+
+    }
+    .cv button {
+        margin-top: 2rem;
+        padding: .8rem 1rem;
+        font-size: 1.3rem;
+    }
+    /***************************** about info items ******************************/
+    .aboutInfoItem {
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .header {
+        font-size: 1.7rem;
+        display: inline-block;
+    }
+    .mobView {
+        display: flex;
+        flex-flow: column;
+    }
+    .item h2 {
+        width: 35%;
+        /* border: 1px solid red; */
+    }
+    .items {
+        width: 65%;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+    }
+    .mobView .items {
+        width: 100%;
+
+    }
+    .webTechnologies {
+        /* border: 1px solid red; */
+        margin: 1rem 1.5rem;
+    }
+}
+
