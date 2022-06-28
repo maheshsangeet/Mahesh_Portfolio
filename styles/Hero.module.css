@@ -3,6 +3,8 @@
   height: 92vh;
   display: flex;
   overflow: hidden;
+  font-family: var(--fontFamily);
+  background-color: var(--theme);
 }
 .leftSection {
   width: 65%;
@@ -125,4 +127,54 @@
   height: 81vh !important;
   opacity: .8;
   filter: drop-shadow(15px 16px 20px rgb(55, 54, 54));
+}
+
+
+
+/************************ responsive part *************************/
+@media screen and (max-width:600px) {
+  .main {
+    overflow:auto;
+    display: flex;
+    flex-flow: column;
+  }
+  .leftSection {
+    width: 100%;
+    /* border: 1px solid red; */
+      
+  }
+  .introduction {
+    position: relative;
+    top: 10%;
+    left: 0;
+    padding-left: 1rem;
+    width: 100%;
+    /* border: 1px solid blue; */
+  }
+  .name h1 {
+    font-size: 5rem;
+  }
+  .name h3 {
+    font-family: var(--fontFamily);
+    margin: -5rem 0 0 5rem;
+  }
+  .about {
+    width: 100%;
+    font-family: var(--fontFamily);
+    word-spacing: 3px;
+    padding: 1rem 1.2rem 0 0;
+    /* border: 1px solid red; */
+  }
+  
+  .rightSection {
+    width: 100%;
+    /* border: 1px solid blue; */
+    padding-left: 0;
+  }
+  .rightSection img {
+    /* border: 1px solid red !important; */
+    height: 60vh !important;
+    opacity: .7;
+    filter: drop-shadow(15px 16px 20px rgb(73, 73, 73));
+  }
 }
