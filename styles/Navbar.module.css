@@ -11,21 +11,19 @@
   z-index: 9999;
   width: 100%;
   box-shadow: 10px 0 20px 10px rgb(9, 9, 9);
-  border: 1px solid black;
+  border: 1px solid var(--navbarTheme);
   height: 8vh;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--navbarTheme);
 }
-
 .brandName{
   position: absolute;
   right: 0;
-  margin: 1.5rem 4rem .5rem 0; 
+  margin: .7rem 4rem; 
   font-family: var(--fontCursive);
   color: var(--orange);
   font-size: 1.1rem;
   cursor: pointer;
   animation: bounce 2s  infinite linear;
-
 }
 
   @keyframes bounce {
@@ -62,7 +60,7 @@
   display: block;
   width: 0;
   height: 2px;
-  /* margin: auto;                       try without this, starts from left to right */
+  margin: auto;                       
   background: var(--orange);
   transition: width .3s;
 }
@@ -99,10 +97,9 @@
   .navContent input[type="checkbox"]{
     position: absolute;
     display: block;
-    height: 2rem;
-    width: 2rem;
-    top: .3rem;
-    left: .7rem;
+    height: 3rem;
+    width: 4rem;
+    top: .5rem;
     z-index: 50;
     opacity: 0;
     cursor: pointer;
@@ -117,18 +114,18 @@
   } */
   .navContent .bars {
     display: block;
-    height: 1.5rem;
+    height: 1.8rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto .8rem;
+    margin: auto 1rem;
   }
   .navContent .bars .bar {
     display: block;
     border-radius: 10px;
-    height: 0.25rem;
-    width: 2rem;
+    height: 0.3rem;
+    width: 2.4rem;
     background-color: var(--white);
   }
   .bars .first{
@@ -142,12 +139,9 @@
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
   }
-  .bars:hover {
-    background-color: black;
-  }
   .navList {
     /* border: 1px solid yellow; */
-    background-color: rgb(0, 0, 0);
+    background-color: var(--navbarTheme);
     height: 50vh;
     width: 70%;
     transform: translate(-180%);
@@ -157,14 +151,15 @@
     transition: transform 0.5s ease-in-out;
     text-align: center;
     padding: 2rem 1rem;
-    margin: 2.8rem -4rem;    
+    margin: 5rem -6rem;    
   }
   .navList li {
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
   }
+
   .navbar li:hover::after {  
-    width: 0;
+    width: 40%;
   }
   .navContent input[type="checkbox"]:checked ~ .navList{
     transform: translateX(0);

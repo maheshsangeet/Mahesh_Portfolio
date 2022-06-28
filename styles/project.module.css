@@ -71,7 +71,7 @@
 .projectDetails>ul>li {
     padding: .5rem 0.3rem;
     border: 1px solid var(--gray);
-    background-color: black;
+    background-color: rgb(6, 6, 6);
     margin-left: .5rem;
     border-radius: 0.5rem;
     font-size: 0.875rem;
