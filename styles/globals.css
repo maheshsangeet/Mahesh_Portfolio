@@ -14,14 +14,16 @@ a {
   scroll-behavior: smooth;
 }
 :root {
-  --theme: #090909;
+  /* --theme: #090909; */
+  --theme: rgb(12, 12, 12);
+  --mobileTheme: rgb(19, 19, 19);
   --fontColor: #BCB4B4;
   --orange: #f77b42;
   --white: #ffffff;
   --fontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --gray: rgb(27, 27, 27);
   --fontCursive: 'Sacramento', cursive;
-
+  --fontSize_p: 1.2rem;
 }
 @font-face {
   font-family: myFont;
@@ -38,4 +40,10 @@ a {
   background-color: #f5900c;
   background-image: linear-gradient(to right, #3b3b3a, #3a3a38, #383837, #373735, #353634);
   border-radius: 10px;
+}
+
+@media screen and (max-width:600px) {
+  html {
+    font-size: 70%;
+  }
 }

@@ -75,7 +75,7 @@
   color: var(--white);
 }
 
-
+/************************ responsive part *************************/
 
 @media screen and (max-width:600px) {
   .navContent input[type="checkbox"],

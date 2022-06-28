@@ -12,15 +12,17 @@ const Project = () => {
     <Layout>
       <div className={styles.project}>
         
-        <section className={styles.projectIntroduction}>
-          <div className={styles.leftSection} >
-            <Image  width={500} height={350}  alt="animation" src={animationGif} />
-          </div>
-          <div className={styles.rightSection}>
+        <div className={styles.projectIntroduction}>
+          <section className={styles.leftSection} >
+            <div className={styles.img}>
+              <Image  alt="animation" src={animationGif} />
+            </div>
+          </section>
+          <section className={styles.rightSection}>
             <h1>Projects</h1>
             <p>My projects make use of a vast variety of latest technology tools. My best experience is to create Frontend Projects.. <br /> <br /> Below are some of my recent works.</p>
-          </div>
-        </section>
+          </section>
+        </div>
         
         <section className={styles.projectContainer}>
           {ProjectData.map((data, i) => {

@@ -10,15 +10,15 @@
 }
 .leftSection {
     width: 50%;
-    padding: 0 8rem;
-    /* opacity: .9; */
-    /* filter: drop-shadow(15px 16px 20px rgb(55, 54, 54)); */
+    padding: 0 5rem;
     /* border: 1px solid red; */
 }
+
 .rightSection {
     width: 50%;
     /* border: 1px solid red; */
     padding-right: 12rem;
+    padding-top: 1rem;
 }
 .rightSection p {
     font-size: 1.2rem;
@@ -57,7 +57,7 @@
 }
 .projectDetails p{
     text-align: justify;
-    font-size: 15px;
+    font-size: 1rem;
     word-spacing: 2px;
 }
 .projectDetails ul{
@@ -69,15 +69,78 @@
 
 }
 .projectDetails>ul>li {
-    padding: .5rem 5px;
+    padding: .5rem 0.3rem;
     border: 1px solid var(--gray);
     background-color: black;
     margin-left: .5rem;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
 
 }
 
 .github svg {
     transform: rotate(90deg);
+}
+
+
+/************************ responsive part *************************/
+@media screen and (max-width:600px) {
+    .project {
+        background-color:  var(--mobileTheme);
+    }
+    .projectIntroduction {
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        /* border: 1px solid red; */
+    }
+    .leftSection {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        /* border: 1px solid blue; */
+    }
+    .rightSection {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        padding: 0 1.5rem;
+    }
+    .rightSection p {
+        font-size: var(--fontSize_p);
+    }
+    .rightSection h1{
+        margin-top: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .projectContainer {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5rem auto;
+        padding: 1.5rem;
+    }
+    .projectCard {
+         margin: 0 0 5rem 0;
+        width: 97%;
+        /* border: 1px solid white; */
+    }
+    .projectDetails h3 {
+        font-size: 1.5rem;
+        color: rgb(181, 181, 181);
+    }
+    .projectDetails p{
+        font-size: var(--fontSize_p);
+    }
+    .projectDetails>ul>li {
+        font-size: var(--fontSize_p);
+        padding: .5rem .6rem;
+
+    }
+    .github svg {
+        width: 6rem;
+        height: 6rem;
+    }
 }
