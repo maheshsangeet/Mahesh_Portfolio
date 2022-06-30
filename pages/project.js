@@ -1,3 +1,4 @@
+import Head from '../components/Head'
 import Layout from "../components/Layout";
 import ProjectData from "../components/Data";
 import Image from "next/image";
@@ -10,6 +11,7 @@ const Project = () => {
 
   return (
     <Layout>
+      <Head title="project" />
       <div className={styles.project}>
         
         <div className={styles.projectIntroduction}>

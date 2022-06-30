@@ -1,12 +1,16 @@
 import React from 'react';
-import Title from 'next/head'
+import Head from 'next/head'
 
-const Head = ({ title}) => {
+const Heading = ({ title}) => {
   return (
     <>
-        <Title>{title} | Mahesh Portfolio</Title>
+        <Head>
+          <title>{title} | Mahesh Portfolio</title>
+          <meta name="description"content="Mahesh Sangeet's detailed information build by using Next.js"/>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
     </>
   )
 }
 
-export default Head;
+export default Heading;

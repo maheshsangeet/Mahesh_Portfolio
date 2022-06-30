@@ -21,7 +21,7 @@ function Hero() {
                     <section className={styles.leftSection}>
                         <div className={styles.introduction}>
                             <h2>
-                                <strong className={styles.line} >Hi There👋,</strong>
+                                <strong className={styles.line} >Hi There 👋,</strong>
                                 <strong className={styles.line} >I am</strong>
                             </h2>
                         

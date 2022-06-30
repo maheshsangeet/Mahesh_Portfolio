@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Head from 'next/head'
+import Head from '../components/Head'
 import styles from '../styles/about.module.css'
 import Layout from '../components/Layout'
 import { FaLinux, FaReact } from 'react-icons/fa';
@@ -37,12 +37,7 @@ const About = () => {
 
   return (
       <div>
-        <Head>
-          <title>about | Mahesh Portfolio</title>
-          <meta name="description"content="Mahesh Sangeet's detailed information build by using Next.js"/>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
+        <Head title="about" />
         <Layout>
           <main className={styles.main}>
             <div className={styles.container}>

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from '../components/Head'
 import Layout from '../components/Layout'
 import styles from "../styles/contact.module.css"
 import { useState } from 'react'
@@ -39,11 +39,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Head>
-        <title>contact | Mahesh Portfolio</title>
-        <meta name="description"content="Mahesh Sangeet's detailed information build by using Next.js"/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head title="contact" />
       <Layout>
         <main className={styles.main}>
           <section className={styles.leftSection}>

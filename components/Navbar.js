@@ -4,6 +4,7 @@ import Link from 'next/link'
 const Navbar = () => {
     return (
             <nav className={styles.navbar}>
+
                 <div className={styles.navContent}>
                     <input type="checkbox" name="" id=""/>
                     <div className={styles.bars}>
