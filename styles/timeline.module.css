@@ -2,21 +2,14 @@
 .historyContainer {
     margin: auto;
     max-width: 75rem;
-    /* position: relative;
-    top: 20%; */
 }
 .carousel ul {
-    /* background: #122c34; */
     padding: 1rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin-left: 2rem;
     margin-bottom: 5rem;
-    /* remove scrollbar */
-    scrollbar-width: none;
-    
-
     box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.152),
     2px 5px 10px rgb(0, 0, 0);
 }
@@ -27,7 +20,6 @@
     display: none;
 }
 .carouselItem {
-    /* background: #122c34; */
     border-radius: 3px;
     max-width: 12.25rem;
     /* border: 1px solid white; */
@@ -36,10 +28,8 @@
 .carouselItemTitle {
     font-weight: bold;
     font-size: 1.5rem;
-    /* line-height: 2rem; */
     letter-spacing: 0.02em;
     display: flex;
-    /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
     background: linear-gradient(
       121.57deg,
       #ffffff 10%,
@@ -65,29 +55,8 @@
     color: rgba(255, 255, 255, 0.75);
     padding-right: 1rem;
 }
-.carouselButtons {
-    width: 18rem;
-    display: none;
-    visibility: hidden;
-}
-.carouselButton {
-    box-sizing: border-box;
-    background: none;
-    padding: 0.25rem;
-    border: none;
-    cursor: pointer;
-    margin-right: 0.25rem;
-    /* opacity: ${(props) => (props.active === props.index ? `1` : `.33`)};
-    transform: ${(props) =>
-        props.active === props.index ? `scale(1.6)` : `scale(1)`}; */ 
-}
-.carouselButton:focus {
-    outline: none;
-}
-.carouselButtonDot {
-    background-color: white;
-    border-radius: 0.625rem;
-    margin: auto;
-    width: 0.1875rem;
-    height: 0.1875rem;
-}
+
+
+
+
+

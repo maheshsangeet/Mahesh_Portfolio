@@ -1,67 +1,22 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import styles from '../styles/timeline.module.css'
 import { TimeLineData } from "../components/Constants";
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
-    const [activeItem, setActiveItem] = useState(0);
-    const carouselRef = useRef();
-
-    const scroll = (window, left) => {
-        return window.scrollTo({ left, behavior: "smooth" });
-    };
-
-    const handleClick = (e, i) => {
-      e.preventDefault();
-
-      if (carouselRef.current) {
-        const scrollLeft = Math.floor(
-          carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
-        );
-
-        scroll(carouselRef.current, scrollLeft);
-      }
-    };
-
-    const handleScroll = () => {
-      if (carouselRef.current) {
-        const index = Math.round(
-          (carouselRef.current.scrollLeft /
-            (carouselRef.current.scrollWidth * 0.7)) *
-            TimeLineData.length
-        );
-
-        setActiveItem(index);
-      }
-    };
-
-    // snap back to beginning of scroll when window is resized
-    // avoids a bug where content is covered up if coming from smaller screen
-    useEffect(() => {
-      const handleResize = () => {
-        scroll(carouselRef.current, 0);
-      };
-
-      window.addEventListener("resize", handleResize);
-    }, []);
 
     return (
         <div className={styles.historyContainer}>
           <section className={styles.carousel}>
-            <ul ref={carouselRef} onScroll={handleScroll}>
+            <ul>
               <>
                 {TimeLineData.map((item, index) => (
                   <div
-                    key={index}
-                    final={index === TOTAL_CAROUSEL_COUNT - 1}
+                    
                   >
                     <div
                       className={styles.carouselItem}
-                      index={index}
-                      id={`carousel__item-${index}`}
-                      active={activeItem}
-                      onClick={(e) => handleClick(e, index)}
+                      
                     >
                       <h4 className={styles.carouselItemTitle}>
                         {item.year}
@@ -105,22 +60,6 @@ const Timeline = () => {
                 ))}
               </>
             </ul>
-            <div className={styles.carouselButtons}>
-              {TimeLineData.map((item, index) => (
-                <button
-                  className={styles.carouselButton}
-                  key={index}
-                  index={index}
-                  active={activeItem}
-                  onClick={(e) => handleClick(e, index)}
-                  type="button"
-                  style={{background:"red"}}
-                >
-                  <div className={styles.carouselButtonDot} active={activeItem} />
-                </button>
-              ))}
-            </div>
-            {/* <div className={styles.sectionDivider}></div> */}
           </section>
         </div>
     )
