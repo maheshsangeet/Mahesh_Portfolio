@@ -29,7 +29,7 @@ const Project = () => {
         <section className={styles.projectContainer}>
           {ProjectData.map((data, i) => {
             return (
-                <div className={styles.projectCard}>
+                <div className={styles.projectCard} key={i}>
                   <Image  width={400} height={250}  alt="project" src={data.img} />
                   <div className={styles.projectDetails}>
                     <h3>{data.title}</h3>
@@ -39,7 +39,7 @@ const Project = () => {
                     <h4 style={{textDecoration:"underline"}}>Stack</h4>
                     <ul>
                       {data.tech.map((d, i) => {
-                        return <li>{d}</li>;
+                        return <li key={i}>{d}</li>;
                       })}
                     </ul>
                   </div>

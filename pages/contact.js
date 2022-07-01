@@ -45,7 +45,7 @@ const Contact = () => {
           <section className={styles.leftSection}>
             <div className={styles.leftSectionContainer}>
               <div className={styles.content}>
-                <h1>Let's talk.</h1>
+                <h1>Lets talk.</h1>
                 <p>Get in touch via the form below, or by emailing <a href='mailto:maheshsangeet0@gmail.com'>maheshsangeet0@gmail.com.</a></p>
               </div>
 

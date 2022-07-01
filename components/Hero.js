@@ -46,7 +46,7 @@ function Hero() {
                                        <br /> 
                                        Currently I am working as a front end developer at Samarth Meditech Pvt Ltd Hubli,Karnataka. I’m currently focusing on React.js and Next js and Life long learner,always hunger for learning new things and put those into continuous implementation.
                                     </p>
-                                    <Link href="/about" >
+                                    <Link href="/about" passHref>
                                            <p style={{color:"#f77b42",cursor:"pointer"}}>More details &#10153;</p>
                                     </Link>
                                 </div>
