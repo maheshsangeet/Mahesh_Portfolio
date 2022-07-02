@@ -64,7 +64,7 @@ function Hero() {
 
                     <section className={styles.rightSection}>
                         <div className={styles.img}>
-                            <Image src={photo} alt="Picture of hero" data-aos="zoom-in-left"/>
+                            <Image src={photo} alt="Picture of hero" data-aos="zoom-in"/>
                         </div>
                     </section>
                 

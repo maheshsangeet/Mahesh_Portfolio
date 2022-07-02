@@ -38,7 +38,7 @@ const Project = () => {
         <section className={styles.projectContainer}>
           {ProjectData.map((data, i) => {
             return (
-                <div className={styles.projectCard} data-aos="zoom-in">
+                <div className={styles.projectCard} data-aos="zoom-in" key={i}>
                   <Image  width="500"  height={300}  alt={i} src={data.img} />
                   <div className={styles.projectDetails}>
                     <h3>{data.title}</h3>
