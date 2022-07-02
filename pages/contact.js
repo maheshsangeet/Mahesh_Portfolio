@@ -1,10 +1,12 @@
 import Head from '../components/Head'
 import Layout from '../components/Layout'
 import styles from "../styles/contact.module.css"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import BackgroundAnimation from '../components/BackgroundAnimation'
 import SocialMedia from '../components/SocialMedia'
 import emailjs from 'emailjs-com'
+import AOS from "aos";
+
 
 const Result =() =>{
   return(
@@ -37,6 +39,14 @@ const Contact = () => {
     showResult(false)
   },5000)
 
+
+  useEffect(() => {
+    AOS.init({
+      duration : 3000
+    }); 
+    AOS.refresh();
+  }, [])
+
   return (
     <div>
       <Head title="contact" />
@@ -45,11 +55,11 @@ const Contact = () => {
           <section className={styles.leftSection}>
             <div className={styles.leftSectionContainer}>
               <div className={styles.content}>
-                <h1>Lets talk.</h1>
-                <p>Get in touch via the form below, or by emailing <a href='mailto:maheshsangeet0@gmail.com'>maheshsangeet0@gmail.com.</a></p>
+                <h1 data-aos="flip-up">Lets talk.</h1>
+                <p data-aos="flip-up">Get in touch via the form below, or by emailing <a href='mailto:maheshsangeet0@gmail.com'>maheshsangeet0@gmail.com.</a></p>
               </div>
 
-              <form onSubmit={sendEmail}>
+              <form onSubmit={sendEmail} >
                 <div className={styles.inputContainer}>
                   <label>Name:</label>
                   <input

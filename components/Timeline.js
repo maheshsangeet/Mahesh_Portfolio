@@ -1,20 +1,29 @@
 import React from "react";
 import styles from '../styles/timeline.module.css'
 import { TimeLineData } from "../components/Constants";
+import { useEffect } from 'react'
+import AOS from "aos";
 
 
 const Timeline = () => {
+  useEffect(() => {
+    
+    AOS.init({
+      duration : 3000
+    });    
+    AOS.refresh();
+  }, [])
 
     return (
         <div className={styles.historyContainer}>
-          <section className={styles.carousel}>
+          <section className={styles.carousel} >
             <ul>
               <>
                 {TimeLineData.map((item, index) => (
                   <div key={index}>
                     <div
                       className={styles.carouselItem}
-                      
+                      data-aos="zoom-in"
                     >
                       <h4 className={styles.carouselItemTitle}>
                         {item.year}

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Head from '../components/Head'
 import Layout from "../components/Layout";
 import ProjectData from "../components/Data";
@@ -5,9 +6,17 @@ import Image from "next/image";
 import styles from "../styles/project.module.css"
 import animationGif from "/public/static/web-unscreen.gif"
 import Link from "next/link";
+import AOS from "aos";
 
 
 const Project = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 3000
+    }); 
+    AOS.refresh();
+  }, [])
 
   return (
     <Layout>
@@ -17,20 +26,20 @@ const Project = () => {
         <div className={styles.projectIntroduction}>
           <section className={styles.leftSection} >
             <div className={styles.img}>
-              <Image  alt="animation" src={animationGif} />
+              <Image  alt="animation" src={animationGif} data-aos="zoom-in-right"/>
             </div>
           </section>
           <section className={styles.rightSection}>
             <h1>Projects</h1>
-            <p>My projects make use of a vast variety of latest technology tools. My best experience is to create Frontend Projects.. <br /> <br /> Below are some of my recent works.</p>
+            <p data-aos="flip-up">My projects make use of a vast variety of latest technology tools. My best experience is to create Frontend Projects.. <br /> <br /> Below are some of my recent works.</p>
           </section>
         </div>
         
         <section className={styles.projectContainer}>
           {ProjectData.map((data, i) => {
             return (
-                <div className={styles.projectCard} key={i}>
-                  <Image  width={400} height={250}  alt="project" src={data.img} />
+                <div className={styles.projectCard} data-aos="zoom-in">
+                  <Image  width="500"  height={300}  alt={i} src={data.img} />
                   <div className={styles.projectDetails}>
                     <h3>{data.title}</h3>
                     <p>

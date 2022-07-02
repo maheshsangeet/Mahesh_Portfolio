@@ -1,12 +1,20 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import photo from "/public/static/pic1 (1).png"
 import styles from "../styles/Hero.module.css"
 import Image from 'next/image'
 import Layout from './Layout'
 import Link from 'next/link'
+import AOS from "aos";
 
 function Hero() {
-    
+
+    useEffect(() => {
+        AOS.init({
+            duration : 3000
+        });
+        AOS.refresh();
+      }, [])
 
     return (
         <div>
@@ -20,7 +28,7 @@ function Hero() {
                 <main className={styles.main}>
                     <section className={styles.leftSection}>
                         <div className={styles.introduction}>
-                            <h2>
+                            <h2 data-aos="zoom-out" data-aos-duration="2000">
                                 <strong className={styles.line} >Hi There 👋,</strong>
                                 <strong className={styles.line} >I am</strong>
                             </h2>
@@ -35,7 +43,7 @@ function Hero() {
                                         <span>s</span>
                                         <span>h</span>
                                     </h1>
-                                    <h3 data-aos="fade-up" data-aos-duration="3000">
+                                    <h3 data-aos="fade-up" >
                                         Front end developer
                                     </h3>
                                 </div>
@@ -56,7 +64,7 @@ function Hero() {
 
                     <section className={styles.rightSection}>
                         <div className={styles.img}>
-                            <Image src={photo} alt="Picture of hero" />
+                            <Image src={photo} alt="Picture of hero" data-aos="zoom-in-left"/>
                         </div>
                     </section>
                 
