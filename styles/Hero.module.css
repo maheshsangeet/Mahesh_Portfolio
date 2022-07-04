@@ -126,7 +126,9 @@
   /* border: 1px solid red !important; */
   height: 81vh !important;
   opacity: .8;
-  filter: drop-shadow(15px 16px 20px rgb(55, 54, 54));
+  /* filter: drop-shadow(15px 16px 20px rgb(55, 54, 54)); */
+  filter: drop-shadow(5px 0 0.75rem rgb(40, 40, 40));
+
 }
 
 
@@ -176,7 +178,5 @@
   .rightSection img {
     /* border: 1px solid red !important; */
     height: 60vh !important;
-    opacity: .7;
-    filter: drop-shadow(15px 16px 20px rgb(73, 73, 73));
-  }
+    }
 }

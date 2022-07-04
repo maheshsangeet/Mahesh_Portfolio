@@ -200,7 +200,7 @@
         width: 25rem;
     }
     .aboutImg svg {
-        filter: drop-shadow(0 0 0.6rem rgb(122, 122, 122));
+        filter: drop-shadow(0 0 0.6rem rgb(59, 59, 59));
     }
     .about {
         text-align: justify;
