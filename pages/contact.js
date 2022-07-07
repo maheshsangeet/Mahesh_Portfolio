@@ -67,6 +67,7 @@ const Contact = () => {
                   required
                   name='name'
                   placeholder='Enter your name'
+                  autocomplete="off"
                   />
                 </div>
                 <div className={styles.inputContainer}>
@@ -102,7 +103,7 @@ const Contact = () => {
               <BackgroundAnimation />
             </div>
           </section>
-          <section>
+          <section className={styles.socialMedia}>
             <SocialMedia />
           </section>         
         </main>

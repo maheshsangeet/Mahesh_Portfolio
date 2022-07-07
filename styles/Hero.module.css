@@ -4,6 +4,7 @@
   display: flex;
   overflow: hidden;
   font-family: var(--fontFamily);
+  position: relative;
   background-color: var(--theme);
 }
 .leftSection {
@@ -117,16 +118,15 @@
   display: block;
 }
 .rightSection {
-  width: 35%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   /* border: 1px solid blue; */
-  padding-top: 4.9rem;
-  padding-left: 2rem;
 }
 .rightSection img {
   /* border: 1px solid red !important; */
   height: 81vh !important;
   opacity: .8;
-  /* filter: drop-shadow(15px 16px 20px rgb(55, 54, 54)); */
   filter: drop-shadow(5px 0 0.75rem rgb(40, 40, 40));
 
 }
