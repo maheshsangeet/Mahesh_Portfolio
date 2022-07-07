@@ -67,7 +67,7 @@ const Contact = () => {
                   required
                   name='name'
                   placeholder='Enter your name'
-                  autocomplete="off"
+                  autoComplete="off"
                   />
                 </div>
                 <div className={styles.inputContainer}>
