@@ -5,22 +5,22 @@ const Navbar = () => {
     return (
             <nav className={styles.navbar}>
 
-                <div className={styles.navContent}>
-                    <input type="checkbox" name="" id=""/>
-                    <div className={styles.bars}>
+                <div className={`${styles.container} ${styles.navContainer}`}>
+                    <input type="checkbox"/>
+                    <div className={styles.humburger}>
                         <div className={`${styles.bar} ${styles.first}`}></div>
                         <div className={`${styles.bar} ${styles.second}`}></div>
                         <div className={`${styles.bar} ${styles.third}`}></div>
                     </div>
 
                     {/* <p  className={styles.brand}>Mahesh Sangeet</p> */}
-                    <div className={styles.brandName}><Link href='/' ><a>Mahi</a></Link></div>
+                    <div className={styles.brandName}><Link href='/' ><span>Mahi</span></Link></div>
 
                     <ul className={styles.navList} >
-                        <li className="home"><Link href='/' ><a>Home</a></Link></li>
-                        <li className="about"><Link href='/about' ><a>About</a></Link></li>
-                        <li className="project"><Link href='/project' ><a>Project</a></Link></li>
-                        <li className="contact"><Link href='/contact' ><a>Contact</a></Link></li>
+                        <li><Link href='/' ><a>Home</a></Link></li>
+                        <li><Link href='/about' ><a>About</a></Link></li>
+                        <li><Link href='/project' ><a>Project</a></Link></li>
+                        <li><Link href='/contact' ><a>Contact</a></Link></li>
                     </ul>
                 </div>
 

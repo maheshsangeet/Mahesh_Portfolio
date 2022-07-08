@@ -1,6 +1,6 @@
-.navContent input[type="checkbox"],
-.navContent .bars,
-.navContent .brand{
+.navContainer input[type="checkbox"],
+.navContainer .humburger,
+.navContainer .brand{
   display: none;
 }
 
@@ -10,10 +10,10 @@
   top: 0;
   z-index: 9999;
   width: 100%;
-  box-shadow: 10px 0 20px 10px var(--navbarTheme);
-  border: 1px solid var(--navbarTheme);
+  box-shadow: 10px 0 20px 10px var(--theme);
+  border: 1px solid var(--theme);
   height: 8vh;
-  background-color: var(--navbarTheme);
+  background-color: var(--theme);
 }
 .brandName{
   position: absolute;
@@ -31,11 +31,11 @@
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
   } 
-.brandName a::before {
+.brandName span::before {
   content: "<";
   /* font-family: -apple-system, Blin kMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
-.brandName a::after {
+.brandName span::after {
   content: "/>";
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 
@@ -76,25 +76,25 @@
 /************************ responsive part *************************/
 
 @media screen and (max-width:600px) {
-  .navContent input[type="checkbox"],
-  .navContent .bars,
-  .navContent .brand{
+  .navContainer input[type="checkbox"],
+  .navContainer .humburger,
+  .navContainer .brand{
     display: block;
   }
   .navbar li a {
     font-family: myFont !important;
   }
-  .navContent .brandName {
+  .navContainer .brandName {
     display: none;
   }
-  .navContent {
+  .navContainer {
     display: block;
     position: relative;
     height: 7vh;
     display: flex;
     /* border: 1px solid white; */
   }
-  .navContent input[type="checkbox"]{
+  .navContainer input[type="checkbox"]{
     position: absolute;
     display: block;
     height: 3rem;
@@ -112,7 +112,7 @@
     font-weight: bolder;
     padding-left: 70%;
   } */
-  .navContent .bars {
+  .navContainer .humburger {
     display: block;
     height: 1.8rem;
     position: relative;
@@ -121,27 +121,27 @@
     justify-content: space-between;
     margin: auto 1rem;
   }
-  .navContent .bars .bar {
+  .navContainer .humburger .bar {
     display: block;
     border-radius: 10px;
     height: 0.3rem;
     width: 2.4rem;
     background-color: var(--white);
   }
-  .bars .first{
+  .humburger .first{
     transform-origin: 0% 0%;
       transition: transform 0.3s ease-in-out;
   }
-  .bars .second{
+  .humburger .second{
     transition: transform 0.2s ease-in-out;
   }
-  .bars .third{
+  .humburger .third{
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
   }
   .navList {
     /* border: 1px solid yellow; */
-    background-color: var(--navbarTheme);
+    background-color: var(--theme);
     height: 50vh;
     width: 70%;
     transform: translate(-180%);
@@ -161,16 +161,16 @@
   .navbar li:hover::after {  
     width: 40%;
   }
-  .navContent input[type="checkbox"]:checked ~ .navList{
+  .navContainer input[type="checkbox"]:checked ~ .navList{
     transform: translateX(0);
   }
-  .navContent input[type="checkbox"]:checked ~ .bars .first{
+  .navContainer input[type="checkbox"]:checked ~ .humburger .first{
       transform: rotate(45deg);
   }
-  .navContent input[type="checkbox"]:checked ~ .bars .second{
+  .navContainer input[type="checkbox"]:checked ~ .humburger .second{
       transform: scaleY(0);
   }
-  .navContent input[type="checkbox"]:checked ~ .bars .third{
+  .navContainer input[type="checkbox"]:checked ~ .humburger .third{
       transform: rotate(-45deg);
   }
 

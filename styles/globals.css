@@ -17,13 +17,12 @@ a {
   /* --theme: #090909; */
   --theme: rgb(15, 15, 15);
   --mobileTheme: rgb(19, 19, 19);
-  --navbarTheme: rgb(15, 15, 15);
-  --fontColor: #bcb4b4;
   --orange: #f77b42;
-  --white: #ffffff;
-  --fontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --gray: rgb(27, 27, 27);
-  --fontCursive: 'Sacramento', cursive;
+  --white: #ffffff;
+  --fontColor: #bcb4b4;
+  --fontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --fontCursive: cursive;
   --fontSize_p: 1.2rem;
 }
 @font-face {
