@@ -81,7 +81,7 @@ const About = () => {
                       </div>
                         
                       <div className={styles.cv}>
-                        <a href='/static/mahesh2022_cv.pdf' target="_blank" rel="noopener noreferrer">
+                        <a href='/static/Mahesh_Sangeet_CV.pdf' target="_blank" rel="noopener noreferrer">
                           <button> Download CV</button> 
                         </a>
                       </div>
