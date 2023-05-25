@@ -9,10 +9,11 @@ import { SiJavascript } from 'react-icons/si';
 import { FaBootstrap } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { SiGatsby } from 'react-icons/si';
-import { SiMysql } from 'react-icons/si';
+import { FaNpm } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiPwa } from 'react-icons/si';
+import { SiVisualstudiocode } from 'react-icons/si';
 import Timeline from '../components/Timeline';
 import AOS from "aos";
 
@@ -82,7 +83,7 @@ const About = () => {
                         
                       <div className={styles.cv}>
                         <a href='/static/Mahesh_Sangeet_CV.pdf' target="_blank" rel="noopener noreferrer">
-                          <button> Download CV</button> 
+                          <button> Download Resume</button> 
                         </a>
                       </div>
                   </div>
@@ -90,6 +91,7 @@ const About = () => {
             </div>
             
             <Timeline />
+            
             
             {/* <div className={styles.containerGear}>
               <div className={`${styles.containerGears} ${styles.gears}`}>
@@ -110,11 +112,11 @@ const About = () => {
                     <div className={styles.items}>
                       <div className={styles.webTechnologies} data-aos="zoom-in" >
                         <FaHtml5 className={styles.icon} />
-                        <p>HTML</p>
+                        <p>HTML 5</p>
                       </div>
                       <div className={styles.webTechnologies} data-aos="zoom-in">
                         <FaCss3Alt className={styles.icon} />
-                        <p>CSS</p>
+                        <p>CSS 3</p>
                       </div>
                       <div className={styles.webTechnologies} data-aos="zoom-in">
                         <SiJavascript className={styles.icon} />
@@ -150,6 +152,14 @@ const About = () => {
                         <SiTailwindcss className={styles.icon} />
                         <p>Tailwind CSS</p>
                       </div>
+                      <div className={styles.webTechnologies} data-aos="zoom-in">
+                        <SiPwa className={styles.icon} />
+                        <p>PWA</p>
+                      </div>
+                      <div className={styles.webTechnologies} data-aos="zoom-in">
+                        <FaNpm className={styles.icon} />
+                        <p>NPM</p>
+                      </div>
                       {/* <div className={styles.webTechnologies}>
                         <SiJavascript className={styles.icon} />
                         <p>Ant D</p>
@@ -160,18 +170,15 @@ const About = () => {
                   <div className={`${styles.item}  ${styles.mobView}`}>
                     <h2>Tools</h2>
                     <div className={styles.items}>
-                      <div className={styles.webTechnologies} data-aos="zoom-in">
-                        <SiPwa className={styles.icon} />
-                        <p>PWA</p>
-                      </div>
+                      
                       {/* <div className={styles.webTechnologies}>
                         <FaHtml5 className={styles.icon} />
                         <p>VS code</p>
                       </div> */}
-                      <div className={styles.webTechnologies} data-aos="zoom-in">
+                      {/* <div className={styles.webTechnologies} data-aos="zoom-in">
                         <SiMysql className={styles.icon} />
                         <p>Mysql</p>
-                      </div>
+                      </div> */}
                       <div className={styles.webTechnologies} data-aos="zoom-in">
                         <FaGithub className={styles.icon} />
                         <p>Github</p>
@@ -179,6 +186,10 @@ const About = () => {
                       <div className={styles.webTechnologies} data-aos="zoom-in">
                         <FaLinux className={styles.icon} />
                         <p>Linux</p>
+                      </div>
+                      <div className={styles.webTechnologies} data-aos="zoom-in">
+                        <SiVisualstudiocode className={styles.icon} />
+                        <p>VS Code</p>
                       </div>
                     </div>
                   </div>
@@ -192,9 +203,16 @@ const About = () => {
 
                 <div className={styles.aboutInfoItems}>
                   <div className={styles.item}>
+                    <h2>2022-2023</h2>
+                    <div className={styles.items}>
+                      <p data-aos="flip-up" data-aos-duration="1500">Front-End Developer at Algonomy Software Pvt Ltd</p>
+                    </div>
+                  </div>
+
+                  <div className={styles.item}>
                     <h2>2020-2022</h2>
                     <div className={styles.items}>
-                      <p data-aos="flip-up" data-aos-duration="1500">Front-End Developer at Samarth Meditech Pvt Ltd</p>
+                      <p data-aos="flip-up" data-aos-duration="1500">Web Developer at Samarth Meditech Pvt Ltd</p>
                     </div>
                   </div>
 
@@ -215,14 +233,15 @@ const About = () => {
               </section>
 
               {/****************** education section ******************/}
-              <section className={styles.educationContainer}>
+              <section className={styles.educationContainer} >
                 <h1 className={`${styles.sectionDivider}  ${styles.header} ${styles.halfBorder}`} data-aos="flip-left">Education</h1>
 
                 <div className={styles.aboutInfoItems}>
+                  
                   <div className={styles.item}>
-                    <h2>School</h2>
+                    <h2>University</h2>
                     <div className={styles.items}>
-                      <p data-aos="flip-up" data-aos-duration="1500">Lamington Boys High School Hubbali</p>
+                      <p data-aos="flip-up" data-aos-duration="1500">Visvesvaraya Technological University <span style={{color:'rgb(255, 128, 0)',fontWeight:'bolder'}}>(</span> VTU <span style={{color:'rgb(255, 128, 0)',fontWeight:'bolder'}}>)</span></p>
                     </div>
                   </div>
 
@@ -232,13 +251,14 @@ const About = () => {
                       <p data-aos="flip-up" data-aos-duration="1500">Rural Engineering College Hulkoti</p>
                     </div>
                   </div>
-                  
+
                   <div className={styles.item}>
-                    <h2>University</h2>
+                    <h2>School</h2>
                     <div className={styles.items}>
-                      <p data-aos="flip-up" data-aos-duration="1500">Visvesvaraya Technological University <span style={{color:'rgb(255, 128, 0)',fontWeight:'bolder'}}>(</span> VTU <span style={{color:'rgb(255, 128, 0)',fontWeight:'bolder'}}>)</span></p>
+                      <p data-aos="flip-up" data-aos-duration="1500">Lamington Boys High School Hubbali</p>
                     </div>
                   </div>
+
                 </div>
               </section>
               

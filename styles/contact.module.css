@@ -72,6 +72,12 @@
 .submitBtn:active {
     transform: scale(.6);
 }
+/* .icon {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid white;
+    
+} */
 
 
 
@@ -91,6 +97,8 @@
     color: var(--orange);
     font-size: 1.1rem;
 }
+
+
 
 
 /************************ responsive part *************************/

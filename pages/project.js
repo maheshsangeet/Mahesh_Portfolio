@@ -45,7 +45,7 @@ const Project = () => {
                     <p>
                       {data.description}
                     </p>
-                    <h4 style={{textDecoration:"underline"}}>Stack</h4>
+                    <h4 style={{textDecoration:"underline"}}>Tech Stack</h4>
                     <ul>
                       {data.tech.map((d, i) => {
                         return <li key={i}>{d}</li>;

@@ -6,7 +6,7 @@ import BackgroundAnimation from '../components/BackgroundAnimation'
 import SocialMedia from '../components/SocialMedia'
 import emailjs from 'emailjs-com'
 import AOS from "aos";
-
+import { FaTelegramPlane } from 'react-icons/fa'
 
 const Result =() =>{
   return(
@@ -92,7 +92,11 @@ const Contact = () => {
                 <div>{ result ? <Result/> : null} </div>
 
                 <div>
-                  <button className={styles.submitBtn}>Submit</button>
+                  <button className={styles.submitBtn}>Send Message
+                    {/* <span className={styles.webTechnologies} >
+                        <FaTelegramPlane className={styles.icon} />
+                    </span> */}
+                  </button>
                 </div>
               </form>
             </div>

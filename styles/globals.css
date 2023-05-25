@@ -12,6 +12,7 @@ a {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  letter-spacing: .2px;
 }
 :root {
   /* --theme: #090909; */
@@ -22,6 +23,7 @@ a {
   --white: #ffffff;
   --fontColor: #bcb4b4;
   --fontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* --fontFamily: 'Franklin Gothic Normal', 'Arial Narrow', Arial, sans-serif; */
   --fontCursive: cursive;
   --fontSize_p: 1.2rem;
 }

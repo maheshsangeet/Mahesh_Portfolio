@@ -24,7 +24,7 @@
     top: 8%;
     word-spacing: 2px;
     width: 90%;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     line-height: 1.5;
     /* border: 1px solid yellow; */
     
@@ -155,6 +155,10 @@
 }
 .experienceContainer {
     margin: 5rem 0;
+}
+
+.educationContainer{
+    padding-bottom: 3rem;
 }
 
 /***************************** gears  **********************************/
