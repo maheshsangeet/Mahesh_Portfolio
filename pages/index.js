@@ -56,7 +56,7 @@ function Home() {
                     <br />
                     {/* Currently working as a front end developer at Samarth
                     Meditech Pvt Ltd Karnataka.  */}
-                    Recently worked as a Front End Developer at Algonomy Software Pvt Ltd Karnataka.
+                    Previously a Front End Developer at Algonomy Software Pvt Ltd Karnataka.
                     Currently, my focus is on mastering React.js and Next.js and I am a life long learner,
                     always eager to learn new technologies and apply them.
                   </p>
