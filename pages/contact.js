@@ -1,51 +1,54 @@
-import Head from '../components/Head'
-import Layout from '../components/Layout'
-import styles from "../styles/contact.module.css"
-import { useState, useEffect } from 'react'
-import BackgroundAnimation from '../components/BackgroundAnimation'
-import SocialMedia from '../components/SocialMedia'
-import emailjs from 'emailjs-com'
+import Head from "../components/Head";
+import Layout from "../components/Layout";
+import styles from "../styles/contact.module.css";
+import { useState, useEffect } from "react";
+import BackgroundAnimation from "../components/BackgroundAnimation";
+import SocialMedia from "../components/SocialMedia";
+import emailjs from "emailjs-com";
 import AOS from "aos";
-import { FaTelegramPlane } from 'react-icons/fa'
+import { FaTelegramPlane } from "react-icons/fa";
 
-const Result =() =>{
-  return(
-    <p className={styles.result}>Your Message Has Been Sent Successfully 🎉🎉
-      <br />
-      I will Contact You Soon 😊
+const Result = () => {
+  return (
+    <p className={styles.result}>
+      Your Message Has Been Sent Successfully 🎉🎉
+      <br />I will Contact You Soon 😊
     </p>
   );
 };
 
-
 const Contact = () => {
-  const [result, showResult]=useState(false);
+  const [result, showResult] = useState(false);
 
-  function sendEmail (e) {
-    e.preventDefault(); 
+  function sendEmail(e) {
+    e.preventDefault();
 
-    emailjs.sendForm( 
-      'service_p3r7byg',
-      'template_gmq8deg',
-      e.target,
-      "Org7jcVI0fpeXb_C7").then(res=>{console.log(res);}).catch(error=> console.log(error));
+    emailjs
+      .sendForm(
+        "service_p3r7byg",
+        "template_gmq8deg",
+        e.target,
+        "Org7jcVI0fpeXb_C7"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((error) => console.log(error));
 
-      e.target.reset();
-      showResult(true);
+    e.target.reset();
+    showResult(true);
   }
 
-
-  setTimeout(()=>{
-    showResult(false)
-  },5000)
-
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
 
   useEffect(() => {
     AOS.init({
-      duration : 3000
-    }); 
+      duration: 3000,
+    });
     AOS.refresh();
-  }, [])
+  }, []);
 
   return (
     <div>
@@ -56,43 +59,51 @@ const Contact = () => {
             <div className={styles.leftSectionContainer}>
               <div className={styles.content}>
                 <h1 data-aos="flip-up">Lets talk.</h1>
-                <p data-aos="flip-up">Get in touch via the form below, or by emailing <a href='mailto:maheshsangeet0@gmail.com'>maheshsangeet0@gmail.com.</a></p>
+                <p data-aos="flip-up">
+                  Get in touch via the form below, or by emailing{" "}
+                  <a href="mailto:maheshsangeet0@gmail.com">
+                    maheshsangeet0@gmail.com.
+                  </a>
+                </p>
               </div>
 
-              <form onSubmit={sendEmail} >
+              <form onSubmit={sendEmail}>
                 <div className={styles.inputContainer}>
                   <label>Name:</label>
                   <input
-                  type="text"
-                  required
-                  name='name'
-                  placeholder='Enter your name'
-                  autoComplete="off"
+                    type="text"
+                    required
+                    name="name"
+                    placeholder="Enter your name"
+                    autoComplete="off"
                   />
                 </div>
                 <div className={styles.inputContainer}>
                   <label>Your Email:</label>
                   <input
-                  type="email"
-                  required
-                  name='user_email'
-                  placeholder='Enter your email address'
+                    type="email"
+                    required
+                    name="user_email"
+                    placeholder="Enter your email address"
                   />
                 </div>
                 <div className={styles.inputContainer}>
-                  <label className="text-base font-bold mb-2   text-gray-400 mt-8">Your Message:</label>
-                    <textarea
+                  <label className="text-base font-bold mb-2   text-gray-400 mt-8">
+                    Your Message:
+                  </label>
+                  <textarea
                     rows="5"
                     required
-                    name='message'
-                    placeholder='Enter your message'
-                    />
+                    name="message"
+                    placeholder="Enter your message"
+                  />
                 </div>
 
-                <div>{ result ? <Result/> : null} </div>
+                <div>{result ? <Result /> : null} </div>
 
                 <div>
-                  <button className={styles.submitBtn}>Send Message
+                  <button className={styles.submitBtn}>
+                    Send Message
                     {/* <span className={styles.webTechnologies} >
                         <FaTelegramPlane className={styles.icon} />
                     </span> */}
@@ -109,11 +120,11 @@ const Contact = () => {
           </section>
           <section className={styles.socialMedia}>
             <SocialMedia />
-          </section>         
+          </section>
         </main>
       </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
